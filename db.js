@@ -2,8 +2,7 @@
 require('dotenv').config();
  const mongoose = require('mongoose');
 let Database = process.env.MONGODBURL;
-  
-// This function code connecting MnogoDB Database..................
+ // This function code connecting MnogoDB Database..................
 const connectToMongo = async () => {
     try {
         await mongoose.connect( Database , {
